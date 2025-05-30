@@ -1,8 +1,4 @@
 
-```markdown
-# ASCII Art Configurator for Neofetch
-
-A simple script to configure Neofetch with custom ASCII art for both user and root profiles. The script allows you to specify a path to your desired ASCII art file, and it generates the necessary configuration files for Neofetch based on your system's details.
 
 ![Neofetch Logo](https://raw.githubusercontent.com/dylanaraps/neofetch/master/img/logo.png)
 
