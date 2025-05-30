@@ -101,23 +101,18 @@ The `image_source` variable will point to the ASCII art file you specified.
 Here is an example of how the Neofetch output will look after running the script (depending on your system details and ASCII art):
 
 ```bash
-                    .-/+oossssoo+/-.              
-                `:+ssssssssssssssssss+:`          
-              -+ssssssssssssssssssyyssss+-        
-            .osssssssssssssssssssssssssssssso.      
-           /ssssssssssssssssssssssssssssssssss/     
-          +ssssssssssssssssssssssssssssssssssss+    
-         /ssssssssssssssssssssssssssssssssssssss/   
-        +ssssssssssssssssssssssssssssssssssssssss+  
-        /ssssssssssssssssssssssssssssssssssssssss/  
-       +ssssssssssssssssssssssssssssssssssssssssss+ 
-      /ssssssssssssssssssssssssssssssssssssssssssss/
-     +ssssssssssssssssssssssssssssssssssssssssssssss+
-    /ssssssssssssssssssssssssssssssssssssssssssssssss/
-   +ssssssssssssssssssssssssssssssssssssssssssssssssss+
-  /ssssssssssssssssssssssssssssssssssssssssssssssssssss/
- +ssssssssssssssssssssssssssssssssssssssssssssssssssssss+
-/ssssssssssssssssssssssssssssssssssssssssssssssssssssssss/
+${c1} _______________________
+
+
+  ______                __ 
+  | ___ \              / _|
+  | |_/ /  __ _   ___ | |_ 
+  |    /  / _` | / _ \|  _|
+  | |\ \ | (_| ||  __/| |  
+  \_| \_| \__,_| \___||_|  
+                   xby raef
+                         
+
 ```
 
 ## Troubleshooting
