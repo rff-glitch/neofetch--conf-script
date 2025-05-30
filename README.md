@@ -2,6 +2,17 @@
 
 ![Neofetch Logo](https://raw.githubusercontent.com/dylanaraps/neofetch/master/img/logo.png)
 
+<h3 align="center"><img src="https://i.imgur.com/ZQI2EYz.png" alt="logo" height="100px"></h3>
+<p align="center">A command-line system information tool written in bash 3.2+</p>
+
+<p align="center">
+<a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+<a href="https://github.com/dylanaraps/neofetch/releases"><img src="https://img.shields.io/github/release/dylanaraps/neofetch.svg"></a>
+<a href="https://repology.org/metapackage/neofetch"><img src="https://repology.org/badge/tiny-repos/neofetch.svg" alt="Packaging status"></a>
+</p>
+
+<img src="https://i.imgur.com/GFmC5Ad.png" alt="neofetch" align="right" height="240px">
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Installation](#installation)
@@ -101,7 +112,7 @@ The `image_source` variable will point to the ASCII art file you specified.
 Here is an example of how the Neofetch output will look after running the script (depending on your system details and ASCII art):
 
 ```bash
-${c1} _______________________
+_______________________
 
 
   ______                __ 
