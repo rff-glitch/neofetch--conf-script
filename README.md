@@ -1,79 +1,85 @@
 
-<h3 align="center"><img src="https://i.imgur.com/ZQI2EYz.png" alt="logo" height="100px"></h3>
 
-<p align="center">
-<a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+A sleek and interactive Bash script to customize your **Neofetch** output with your own ASCII art!  
+Perfect for those who want a personal touch to their terminal aesthetic. 🖥️✨
 
+---
 
+## 📜 What It Does
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Dependencies](#dependencies)
-- [Configuration](#configuration)
-- [Examples](#examples)
-- [Troubleshooting](#troubleshooting)
-- [Contributors](#contributors)
-- [License](#license)
+This script helps you:
 
-## Introduction
+- ✅ Prompt for your custom ASCII art file
+- ✅ Automatically generate a `neofetch` configuration
+- ✅ Set it up for both the **current user** and **root** (using `sudo`)
+- ✅ Enhance your terminal with personalized system info + artwork
 
-This script prompts you to enter the path of your desired ASCII art file, verifies its existence, and automatically generates the necessary configuration for Neofetch. It writes the configuration for both the current user and root if applicable.
+---
 
-## Installation
+## 🧰 Requirements
 
-To use this script, follow these steps:
+- 🐧 Linux (or any Unix-like OS)
+- 🔧 [Neofetch](https://github.com/dylanaraps/neofetch)
+- 🖼️ Your own ASCII art file
+- 🛠️ `bash` shell
+- 🔐 `sudo` privileges (for root config)
 
-1. Download the script to your local machine.
-2. Make the script executable:
+---
 
-   ```bash
-   chmod +x ascii-configurator.sh
-   ```
+## 🚀 Installation & Usage
 
-3. Run the script:
+1. **Download the Script**
 
    ```bash
-   ./ascii-configurator.sh
+   wget https://your-repo-url/script.sh -O setup-neofetch.sh
+   chmod +x setup-neofetch.sh
    ```
 
-## Usage
+2. **Run the Script**
 
-1. **Prompt for ASCII Art Path**: When you run the script, it will ask you to provide the full path to an ASCII art file. Make sure the file exists and is accessible.
-2. **Verify and Create Configurations**: The script checks if the file exists, and if it does, it generates the configuration file for Neofetch with the specified ASCII art for both the user and root directories.
-
-   Example of what you will see during execution:
    ```bash
-   Enter full path to ASCII art file: /home/user/pictures/ascii_art.txt
-   User config written to /home/user/.config/neofetch/config.conf
-   Trying to update root config with sudo...
-   Root config updated.
+   ./setup-neofetch.sh
    ```
 
-## Features
-- **Custom ASCII Art**: Use any ASCII art file you prefer to display with Neofetch.
-- **User & Root Configuration**: Automatically updates both the user and root Neofetch configurations.
-- **Simple and Easy**: Quick setup and use, perfect for customizing your system's information display.
+   You’ll be prompted to enter the full path to your custom ASCII art file. Example:
 
-## Dependencies
+   ```
+   Enter full path to ASCII art file: /home/user/art.txt
+   ```
 
-- **Neofetch**: Ensure you have Neofetch installed on your system to use this configuration.
-  - You can install Neofetch with:
+3. **Done!** 🎉  
+   Your custom Neofetch config will be saved to:
 
-    ```bash
-    sudo apt install neofetch  # Debian/Ubuntu
-    sudo pacman -S neofetch    # Arch/Manjaro
-    brew install neofetch      # macOS (Homebrew)
-    ```
+   - `~/.config/neofetch/config.conf` (User)
+   - `/root/.config/neofetch/config.conf` (Root)
 
-- **Bash**: The script is written in Bash, so ensure Bash is available on your system (most Linux distributions have it pre-installed).
+---
 
-## Configuration
+## 🧪 Example Neofetch Output
 
-The script generates a configuration file with the following structure:
+```
+      YOUR CUSTOM ASCII HERE
+    ---------------------------
+    OS: Arch Linux x86_64
+    Kernel: 6.3.1
+    Uptime: 5h 32m
+    CPU: Intel i7-9750H
+    GPU: NVIDIA GTX 1650
+    Memory: 8GB / 16GB
+    ...
+```
 
+---
+
+## 🔍 Behind the Scenes
+
+This script performs the following:
+
+- Validates your ASCII file exists ✅
+- Creates `.config/neofetch` directories for both user and root 🔐
+- Writes a tailored `config.conf` with enhanced system info and your artwork ✍️
+
+### Example Generated Config:
 ```bash
 print_info() {
     info title
@@ -95,40 +101,39 @@ print_info() {
 }
 
 image_backend="ascii"
-image_source="$ascii_path"
+image_source="/path/to/your/ascii.txt"
 ```
 
-The `image_source` variable will point to the ASCII art file you specified.
+---
 
-## Examples
-
-Here is an example of how the Neofetch output will look after running the script (depending on your system details and ASCII art):
-
-```bash
-_______________________
-
-
-  ______                __ 
-  | ___ \              / _|
-  | |_/ /  __ _   ___ | |_ 
-  |    /  / _` | / _ \|  _|
-  | |\ \ | (_| ||  __/| |  
-  \_| \_| \__,_| \___||_|  
-                   xby raef
-                         
+## 📂 File Structure
 
 ```
+setup-neofetch.sh
+└── ~/.config/neofetch/config.conf
+    └── (Your generated configuration)
+```
 
-## Troubleshooting
+---
 
-- **File Not Found**: If the script reports that the file doesn't exist, double-check the file path you entered.
-- **Permission Issues**: If you're running the script as a non-root user and it cannot update the root configuration, ensure you have `sudo` privileges.
-  
-## Contributors
+## 🙋 FAQ
 
-- **Raef**: Author and creator of the script.
+**Q: What if I mistype the path to the ASCII file?**  
+A: The script will tell you if the file doesn't exist and exit safely. Just re-run it with the correct path.
 
-## License
+**Q: Can I re-run this script to update the config later?**  
+A: Absolutely! Feel free to re-run anytime to change your art.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by **Raef**
+
+---
+
+## 🪄 License
+
+MIT License. Use freely, modify proudly! 🪐
+
 
