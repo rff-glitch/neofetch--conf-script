@@ -1,6 +1,6 @@
 
 
-A sleek and interactive Bash script to customize your **Neofetch** output with your own ASCII art!  
+A Bash script to customize your **Neofetch** output with your own ASCII art!  
 Perfect for those who want a personal touch to their terminal aesthetic. 🖥️✨
 
 ---
