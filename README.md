@@ -31,7 +31,8 @@ This script helps you:
 1. **Download the Script**
 
    ```bash
-   wget https://your-repo-url/script.sh -O setup-neofetch.sh
+   git clone https://github.com/rff-glitch/neofetch--conf-script.git
+   cd neofetch--conf-script
    chmod +x setup-neofetch.sh
    ```
 
